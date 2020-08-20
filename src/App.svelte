@@ -1,5 +1,6 @@
 <script lang="ts">
   import Button from "./components/Button.svelte";
+  import WalletPage from "./pages/wallet.svelte";
   const world = 'world'; // edit world and save to see hmr update
 </script>
 
@@ -12,3 +13,5 @@
 <h1>Hello d {world}</h1>
 <p>Open Appd sds.svelte in your editor and change something to see HMR in action</p>
 <Button/>
+
+<WalletPage/>
