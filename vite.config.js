@@ -1,4 +1,4 @@
-const dependenciesRequiringNodeBuiltins = ["node-gyp-build", "svite-typescript-minimal", "bn.js"];
+const dependenciesRequiringNodeBuiltins = ["bn.js"]; // TODO check if it works
 module.exports = {
     optimizeDeps: {
         allowNodeBuiltins: {
