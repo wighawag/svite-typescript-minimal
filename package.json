@@ -4,7 +4,8 @@
   "scripts": {
     "validate": "svelte-check && tsc --noEmit",
     "dev": "svite -ts",
-    "build": "svite build -ts"
+    "build": "svite build -ts",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@curi/router": "^2.1.0",
@@ -25,7 +26,7 @@
   },
   "devDependencies": {
     "@tsconfig/svelte": "^1.0.8",
-    "rollup-plugin-node-builtins": "^2.1.2",
+    "patch-package": "^6.2.2",
     "svelte-check": "^1.0.11",
     "svelte-preprocess": "^4.0.10",
     "svite": "^0.5.0",

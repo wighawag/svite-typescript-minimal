@@ -1,9 +1,8 @@
-import builtins from 'rollup-plugin-node-builtins';
-
+const dependenciesRequiringNodeBuiltins = ["node-gyp-build", "svite-typescript-minimal", "bn.js"];
 module.exports = {
-    rollupInputOptions: {
-        plugins: [
-            builtins({crypto: true})
-        ]
-    }
-  }
+    optimizeDeps: {
+        allowNodeBuiltins: {
+            includes: (name) => dependenciesRequiringNodeBuiltins.indexOf(name) !== -1
+        }
+    },
+};
